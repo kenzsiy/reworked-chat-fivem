@@ -6,6 +6,7 @@ local chatHidden = true
 local chatLoaded = false
 
 RegisterNetEvent('chat:clear')
+RegisterNetEvent('__cfx_internal:serverPrint')
 
 
 AddEventHandler('__cfx_internal:serverPrint', function(msg)
