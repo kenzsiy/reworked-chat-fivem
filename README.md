@@ -1,4 +1,4 @@
-# chat rework fivem esx
+# Chat rework fivem esx
  Reworked ESX Chat for Fivem
 
 
@@ -14,3 +14,5 @@ Not Included:
 - chat messages
 
 Please keep in mind this is only for Commands and nothing else! (Popular in Germany, and im German so i made it like i know it. Let me know if you want a full flegded chat with all features reworked!)
+
+# Important: Chat resource needs to be named "chat" to Work!
