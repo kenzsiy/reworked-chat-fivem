@@ -40,7 +40,7 @@ end)
 
 RegisterNUICallback('chatResult', function(data, cb)
   chatInputActive = false
-  SetNuiFocus(false)
+  SetNuiFocus(false, false)
 
   if not data.canceled then
     local id = PlayerId()
@@ -129,7 +129,7 @@ end)
 
 Citizen.CreateThread(function()
   SetTextChatEnabled(false)
-  SetNuiFocus(false)
+  SetNuiFocus(false, false)
 
   while true do
     Wait(10)
@@ -147,7 +147,7 @@ Citizen.CreateThread(function()
 
     if chatInputActivating then
       if not IsControlPressed(0, isRDR and `INPUT_MP_TEXT_CHAT_ALL` or 245) then
-        SetNuiFocus(true)
+        SetNuiFocus(true, true)
 
         chatInputActivating = false
       end
