@@ -132,7 +132,7 @@ Citizen.CreateThread(function()
   SetNuiFocus(false, false)
 
   while true do
-    Wait(10)
+    Wait(50)
 
     if not chatInputActive then
       if IsControlPressed(0, isRDR and `INPUT_MP_TEXT_CHAT_ALL` or 245) --[[ INPUT_MP_TEXT_CHAT_ALL ]] then
